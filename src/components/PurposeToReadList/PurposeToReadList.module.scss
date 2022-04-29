@@ -1,7 +1,7 @@
 .item {
     position: relative;
     width: 270px;
-    height: 177px;
+    min-height: 177px;
     margin: 22px auto 0;
     display: flex;
     align-items: center;
@@ -9,7 +9,7 @@
 
         @media screen and (min-width: 768px) {
             width: 678px;
-            height: 40px;
+            min-height: 40px;
             margin: 11px auto 0;          
             align-items: center;
             flex-direction: column;

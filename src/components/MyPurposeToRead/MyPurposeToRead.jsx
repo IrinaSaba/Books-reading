@@ -19,7 +19,6 @@ const MyPurposeToRead = ({ books, isTrain }) => {
   for (let i = 0; i < booksCurrentlyReading.length; i += 1) {
     Number(booksCurrentlyReading[i].pagesFinished) !==
       Number(booksCurrentlyReading[i].pagesTotal) && (booksToRead += 1);
-    // console.log("alreadyRead", booksToRead);
   }
 
   return (

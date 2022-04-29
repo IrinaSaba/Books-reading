@@ -1,60 +1,67 @@
 .wrapper {
-padding-bottom: 30px;
-background-color: white;
+  padding-bottom: 30px;
+  background-color: white;
 }
 
 .ratingWrepper {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 80px;
-    left: 55px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 80px;
+  left: 55px;
 
-    @media screen and (min-width: 480px) {
-        left: 50px;
-    }
+  @media screen and (min-width: 480px) {
+    left: 50px;
+  }
 }
 .ratingText {
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 3.17;
-    color: #898F9F;
-    margin-right: 15px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 3.17;
+  color: #898f9f;
+  margin-right: 15px;
 }
+.summary {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 
-.reviewBtn {
+  .reviewBtn {
     position: absolute;
     bottom: 30px;
     left: 72px;
     width: 127px;
     height: 40px;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 2.7;
     text-align: center;
-    color: #FFFFFF;
-    background: #6D7A8D;
+    color: #ffffff;
+    background: #6d7a8d;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 
     @media screen and (min-width: 768px) {
-        width: 80px;
-        left: 580px;
-        top: 11px;
+      position: inherit;
+      width: 80px;
+      left: auto;
+      bottom: auto;
+      margin-right: 15px;
     }
 
     @media screen and (min-width: 1280px) {
-        width: 130px;
-        left: 987px;   
-    }   
+      width: 130px;
+      left: 987px;
+    }
+  }
 }
 .reviewBtnWrepper {
-    background-color: white;
-    height: 70px;
+  background-color: white;
+  height: 70px;
 
-    @media screen and (min-width: 768px) {
-        height: auto;
-    }
+  @media screen and (min-width: 768px) {
+    height: auto;
+  }
 }

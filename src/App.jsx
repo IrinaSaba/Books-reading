@@ -5,7 +5,6 @@ import { Switch } from "react-router-dom";
 import AppBar from "./components/_navigation/AppBar";
 import PrivateRoute from "./components/_routs/PrivateRoute";
 import PublicRoute from "./components/_routs/PublicRoute";
-import GoogleLogin from "./components/Google/GoogleLogin";
 import RedirectNew from "./components/_navigation/RedirectNew";
 import Loader from "./components/_shared/Loader/Loader";
 import { getTheme } from "./redux/theme/themeSelector";
@@ -14,6 +13,8 @@ import { getError } from "./redux/training/trainingSelectors";
 import { getIsError } from "./redux/books/booksSelectors";
 import { getIsErrorAuth } from "./redux/auth/authSelectors";
 import { logoutUser } from "./redux/auth/authSlice";
+import GoogleLogin from "./components/Google/GoogleLogin";
+import { getIsLoggedIn } from "./redux/auth/authSelectors";
 
 const LoginPage = lazy(() => import("./pages/LoginPage/LoginPage.jsx"));
 const RegisterPage = lazy(() =>
@@ -30,6 +31,7 @@ export default function App() {
   const trainError = useSelector(getError);
   const booksError = useSelector(getIsError);
   const authError = useSelector(getIsErrorAuth);
+  const iaAuth = useSelector(getIsLoggedIn);
 
   GoogleLogin();
 
@@ -52,7 +54,7 @@ export default function App() {
   }, [authError, trainError, booksError]);
 
   useEffect(() => {
-    dispatch(getBooks());
+    iaAuth && dispatch(getBooks());
   }, []);
 
   return (

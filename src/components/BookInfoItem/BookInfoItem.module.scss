@@ -39,15 +39,16 @@ button {
   @media screen and (min-width: 768px) {
     align-items: center;
   }
-
 }
 
 .bookInfo {
   padding-left: 55px;
 }
-.bookInfoWrapper{
-  @media screen and (max-width: 767px) {display: flex;
-  align-items: flex-end;}
+.bookInfoWrapper {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .bookTitle {
@@ -55,7 +56,7 @@ button {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.25;
-  color: #242A37;
+  color: #242a37;
   width: 154px;
 
   @media screen and (min-width: 768px) {
@@ -79,7 +80,6 @@ button {
     margin-left: 20px;
     margin-right: 20px;
   }
-
 }
 
 .bookMoreInfo {
@@ -95,20 +95,20 @@ button {
   font-weight: 500;
   font-size: 12px;
   line-height: 3.17;
-  color: #898F9F;
+  color: #898f9f;
 }
 
 .bookMoreInfoAuthor {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
-  color: #242A37;
+  color: #242a37;
   height: 26px;
 
   @media screen and (min-width: 768px) {
     width: 160px;
     font-size: 14px;
-   line-height: 1.5;
+    line-height: 1.5;
   }
 
   @media screen and (min-width: 1280px) {
@@ -123,7 +123,7 @@ button {
   font-weight: 500;
   font-size: 12px;
   line-height: 3.17;
-  color: #242A37;
+  color: #242a37;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -144,7 +144,7 @@ button {
   font-weight: 500;
   font-size: 12px;
   line-height: 3.17;
-  color: #242A37;
+  color: #242a37;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -158,6 +158,6 @@ button {
 }
 .bookInfoWrapper {
   @media screen and (min-width: 768px) {
-   display: flex;
+    display: flex;
   }
 }

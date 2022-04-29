@@ -25,7 +25,7 @@ const BookReviewItem = ({
 
   return (
     <li
-      className={s.item}
+      className={s.bookReviewItem}
       style={{
         backgroundColor: theme === "light" ? "white" : "var(--dark-header)",
       }}

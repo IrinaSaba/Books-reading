@@ -1,159 +1,173 @@
-.item {
-    position: relative;
-    min-height: 272px;
-    margin: 0 auto 65px;
-    width: 270px;
+.bookReviewItem {
+  position: relative;
+  min-height: 272px;
+  height: auto;
+  margin: 0 auto 65px;
+  width: 270px;
+  padding: 4px;
 
-        @media screen and (min-width: 768px) {
-            margin-bottom: 10px;
-            min-height: 60px;
-            width: 678px;
-        }
-        @media screen and (min-width: 1280px) {
-            width: 1200px;
-        }
-}
-a {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-bottom: 10px;
+    min-height: 60px;
+    width: 678px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1200px;
+    height: auto;
+  }
+  a {
     text-decoration: none;
-}
+  }
 
-.iconTitle {
+  .iconTitle {
     display: flex;
     position: absolute;
     top: 20px;
     left: 15px;
 
     @media screen and (min-width: 480px) {
-        margin-bottom: 10px;
-        align-items: center;
+      align-items: center;
     }
 
     @media screen and (min-width: 768px) {
+      position: inherit;
+      top: auto;
+      left: auto;
     }
-}
+  }
 
-.bookInfoWrapper {
+  .bookInfoWrapper {
     position: absolute;
     left: 55px;
     top: 45px;
     @media screen and (min-width: 480px) {
-       left: 50px;
+      left: 50px;
     }
-}
+  }
 
-.bookTitle {
+  .bookTitle {
     margin-left: 14px;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.25;
-    color: #242A37;
+    color: #242a37;
 
     @media screen and (min-width: 768px) {
-        font-size: 14px;
-        line-height: 1.2;
-        width: 135px;
+      font-size: 14px;
+      line-height: 1.2;
+      width: 135px;
     }
 
     @media screen and (min-width: 1280px) {
-        font-size: 14px;
-        line-height: 1.2;
-        width: 301px;
+      font-size: 14px;
+      line-height: 1.2;
+      width: 301px;
     }
-}
+  }
 
-.navIcon {
+  .navIcon {
     @media screen and (min-width: 768px) {
       margin-left: 20px;
     }
-}
+  }
 
-.bookMoreInfo {
+  .bookMoreInfo {
     position: absolute;
     top: 45px;
     left: 126px;
 
     @media screen and (min-width: 768px) {
-        left: 216px;
-        top: 12px;
-        display: flex;
+      position: inherit;
+      left: auto;
+      top: auto;
+      display: flex;
+      align-items: center;
     }
-    @media screen and (min-width: 1280px) {
-        left: 340px;
+
+    .bookInfoText {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 3.17;
+      color: #898f9f;
     }
-}
 
-.bookInfoText {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 3.17;
-    color: #898F9F;
-}
+    .bookMoreInfoAuthor {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 3.17;
+      color: #242a37;
 
-.bookMoreInfoAuthor {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 3.17;
-    color: #242A37;
-
-    @media screen and (min-width: 768px) {
+      @media screen and (min-width: 768px) {
         font-size: 14px;
-        line-height: 1.7;
+        line-height: 1.2;
         width: 110px;
-    }
+        display: flex;
+        align-items: center;
+      }
 
-    @media screen and (min-width: 1280px) {
+      @media screen and (min-width: 1280px) {
         width: 206px;
-        max-height: 40px;
+        min-height: 40px;
         margin-right: 20px;
         font-size: 14px;
+      }
     }
-}
 
-.bookMoreInfoYear {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 3.17;
-    color: #242A37;
+    .bookMoreInfoYear {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 3.17;
+      color: #242a37;
 
-    @media screen and (min-width: 768px) {
+      @media screen and (min-width: 768px) {
         width: 78px;
         font-size: 14px;
         line-height: 2.7;
-    }
+        display: flex;
+        justify-content: center;
+      }
 
-    @media screen and (min-width: 1280px) {
+      @media screen and (min-width: 1280px) {
         font-size: 14px;
         line-height: 2.71;
         width: 102px;
         max-height: 40px;
+      }
     }
-}
 
-.bookMoreInfoPage {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 3.17;
-    color: #242A37;
+    .bookMoreInfoPage {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 3.17;
+      color: #242a37;
 
-    @media screen and (min-width: 768px) {
+      @media screen and (min-width: 768px) {
         width: 50px;
         font-size: 14px;
         line-height: 2.7;
-    }
+        display: flex;
+        justify-content: center;
+      }
 
-    @media screen and (min-width: 1280px) {
+      @media screen and (min-width: 1280px) {
         width: 112px;
         font-size: 14px;
         line-height: 2.71;
         max-height: 40px;
+      }
     }
-}
-
-.ratingStar {
+  }
+  .ratingStar {
     position: absolute;
     top: 20px;
     right: 117px;
-        @media screen and (min-width: 1280px) {
-            left: 815px;
-        }
+    @media screen and (min-width: 768px) {
+      position: inherit;
+      top: auto;
+      right: auto;
+    }
+  }
 }

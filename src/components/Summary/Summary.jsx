@@ -19,7 +19,7 @@ const Summary = ({ bookId, rating, feedback }) => {
   };
 
   return (
-    <>
+    <div className={s.summary}>
       <MediaQuery maxWidth={767}>
         <div className={s.ratingWrepper}>
           <p className={s.ratingText}>{ratingI[lang]} : </p>
@@ -49,7 +49,7 @@ const Summary = ({ bookId, rating, feedback }) => {
           coment={feedback}
         />
       )}
-    </>
+    </div>
   );
 };
 

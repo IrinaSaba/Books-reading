@@ -1,58 +1,65 @@
 .reviewListConteiner {
-    width: 270px;
-    margin: 0 auto;
-        @media screen and (min-width: 768px) {
-            width: 678px;
-        }
-        
-        @media screen and (min-width: 1280px) {
-            width: 1200px;
-        }
+  width: 270px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    width: 678px;
+  }
 
+  @media screen and (min-width: 1280px) {
+    width: 1200px;
+  }
 }
 .bookList {
-    width: 270px;
-    margin: 0 auto;
-    @media screen and (min-width: 768px) {
-        box-shadow: none;
-        width: 678px;
-    }
-    @media screen and (min-width: 1280px) {
-        width: 1200px;
-    }
+  width: 270px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    box-shadow: none;
+    width: 678px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1200px;
+  }
 }
 
 .bookInfo {
-    margin-top: 10px;
+  margin-top: 10px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  .bookInfoText {
     @media screen and (min-width: 768px) {
-        display: flex;
+      margin-right: 25%;
     }
-}
+    @media screen and (min-width: 1280px) {
+      margin-right: 20%;
+    }
+  }
 
-.title {
+  .title {
     margin-right: 140px;
     @media screen and (min-width: 1280px) {
-       margin-right: 276px;
+      margin-right: 27%;
     }
-}
-
-.author {
+  }
+  .author {
     margin-right: 75px;
     @media screen and (min-width: 1280px) {
-       margin-right: 185px;
+      margin-right: 12%;
     }
-}
+  }
 
-.year {
+  .year {
     margin-right: 50px;
     @media screen and (min-width: 1280px) {
-       margin-right: 80px;
+      margin-right: 3%;
     }
-}
+  }
 
-.page {
+  .page {
     margin-right: 21px;
     @media screen and (min-width: 1280px) {
-        margin-right: 110px;
+      margin-right: 6%;
     }
+  }
 }

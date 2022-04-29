@@ -1,102 +1,98 @@
-
 .visuallyHidden {
-	@media screen and (min-width: 1280px) {
-		position: absolute;
-		white-space: nowrap;
-		width: 1px;
-		height: 1px;
-		overflow: hidden;
-		border: 0;
-		padding: 0;
-		clip: rect(0 0 0 0);
-		clip-path: inset(50%);
-		margin: -1px;
-			
-	}
-
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
 }
-.title{
-	display: flex;
-	background-color: var(--secondary-bg-color);
-	color: var(--primary-bg-color);
-	width: 678px;
-	height: 60px;
-	margin-bottom: 30px;
-	justify-content: center;
-	align-items: center;
-	@media screen and (min-width: 1280px) {
-		width: 886px;
-		margin-top: 50px;
-	}
+.title {
+  display: flex;
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-bg-color);
+  width: 678px;
+  height: 60px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 1280px) {
+    width: 886px;
+    margin-top: 50px;
+  }
 }
 
 .modalOpenBtn {
-	color: var(--primary-bg-color);
-	width: 52px;
-	height: 52px;
-	background: rgba(255, 107, 8, 0.782);
-	border-radius: 50%;
-	position: fixed;
-	bottom: 10%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 1;
-	-webkit-transition-duration: 0.4s;
-	transition-duration: 0.4s;
+  color: var(--primary-bg-color);
+  width: 52px;
+  height: 52px;
+  background: rgba(255, 107, 8, 0.782);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 
-	&:hover {
-		background-color: var(--accent-primary-color);
-	}
+  &:hover {
+    background-color: var(--accent-primary-color);
+  }
 }
 .submitBtn {
-	width: 171px;
-	height: 42px;
-	background: #F6F7FB;
-	border: 1px solid var(--title-text-color);
-	box-sizing: border-box;
-	cursor: pointer;
-	-webkit-transition-duration: 0.4s;
-	transition-duration: 0.4s;
-	margin-top: 30px;
+  width: 171px;
+  height: 42px;
+  background: #f6f7fb;
+  border: 1px solid var(--title-text-color);
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  margin-top: 30px;
 
-	&:hover,
-	&:focus {
-		background: var(--accent-primary-color);
-		color: #F6F7FB;
-	}
+  &:hover,
+  &:focus {
+    background: var(--accent-primary-color);
+    color: #f6f7fb;
+  }
 }
 
-.startTrainingBtn{
-	width: 171px;
-	height: 42px;
-	color: #F6F7FB;
-	background: var(--accent-primary-color);
-	border: none;
-	box-sizing: border-box;
-	cursor: pointer;
-	-webkit-transition-duration: 0.4s;
-	transition-duration: 0.4s;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	
+.startTrainingBtn {
+  width: 171px;
+  height: 42px;
+  color: #f6f7fb;
+  background: var(--accent-primary-color);
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.datePicker{
-	display: flex;
-	text-align: center;
+.datePicker {
+  display: flex;
+  text-align: center;
 }
 
-.datePickerInput{
-	width: 250px;
+.datePickerInput {
+  width: 250px;
 }
 
-.select{
-		width: 482px;
-		height: 42px;
-		margin-right: 20px;
-		margin-bottom: 40px;
-		@media screen and (min-width: 1280px) {
-			width: 669px;
-			margin-right: 46px;
-		}
+.select {
+  width: 482px;
+  height: 42px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  @media screen and (min-width: 1280px) {
+    width: 669px;
+    margin-right: 46px;
+  }
 }

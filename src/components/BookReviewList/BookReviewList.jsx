@@ -33,17 +33,17 @@ const BookReviewList = ({ booksLibrary, colorIcon, review }) => {
         }}
       >
         {done[lang]}
-      </h2>
+      </h2>{" "}
+      <MediaQuery minWidth={768}>
+        <div className={s.bookInfo}>
+          <p className={s.title}>{title[lang]}</p>
+          <p className={s.author}>{author[lang]}</p>
+          <p className={s.year}>{publishYear[lang]}</p>
+          <p className={s.page}>{pagesTotal[lang]}</p>
+          <p className={s.bookInfoText}>{rating[lang]}</p>
+        </div>
+      </MediaQuery>
       <ul className={s.bookList}>
-        <MediaQuery minWidth={768}>
-          <div className={s.bookInfo}>
-            <p className={s.title}>{title[lang]}</p>
-            <p className={s.author}>{author[lang]}</p>
-            <p className={s.year}>{publishYear[lang]}</p>
-            <p className={s.page}>{pagesTotal[lang]}</p>
-            <p className={s.bookInfoText}>{rating[lang]}</p>
-          </div>
-        </MediaQuery>
         {booksLibrary.map((book) => (
           <BookReviewItem
             key={book._id}
